@@ -1,9 +1,9 @@
 :root {
-    --cellHeight: 2.4rem;
+    --cellHeight: 1.6rem;
     --subCellHeight: calc(var(--cellHeight)/2);
     --marginScaleTop: calc(var(--cellHeight)/2);
     --marginScaleBottom: calc(var(--cellHeight)/2);
-    --scaleWidth: 6rem;
+    --scaleWidth: 4rem;
     --marginScaleLeft: calc(var(--scaleWidth) * -1 - 0.5rem);
     --subCellWidth: calc(var(--scaleWidth) + 1rem);
     --fontSize: calc(var(--cellHeight)/1.6);
@@ -70,19 +70,21 @@ div {
 
 .scaleContainer {
     display: inline-block;
-    padding-right: 1rem;
-    margin-right: 0.5rem;
-
+    padding-right: 0.5rem;
+    /* margin-right: 0.5rem; */
 }
 
 .method {
-    font-size: 1.3em;
+    /* font-size: 1.3rem; */
     text-align: center;
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 
 div#contentDiv {
     text-align: center;
 }
-h1 {text-align: center;}
+h1 {text-align: center;font-size: 1.5em;margin: 0;}
 a {color:blue;text-decoration: none;}
+body {
+    margin: 0;
+}
