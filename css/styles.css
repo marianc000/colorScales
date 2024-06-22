@@ -1,0 +1,88 @@
+:root {
+    --cellHeight: 2.4rem;
+    --subCellHeight: calc(var(--cellHeight)/2);
+    --marginScaleTop: calc(var(--cellHeight)/2);
+    --marginScaleBottom: calc(var(--cellHeight)/2);
+    --scaleWidth: 6rem;
+    --marginScaleLeft: calc(var(--scaleWidth) * -1 - 0.5rem);
+    --subCellWidth: calc(var(--scaleWidth) + 1rem);
+    --fontSize: calc(var(--cellHeight)/1.6);
+    --fromColor: limegreen;
+    --toColor: red;
+}
+
+html {
+    font-family: system-ui;
+    color: var(--black);
+    font-size: 16px;
+}
+
+.labels>div {
+    text-align: right;
+    height: var(--cellHeight);
+    align-content: center;
+    font-size: var(--fontSize);
+}
+
+.scale {
+    width: var(--scaleWidth);
+    margin: var(--marginScaleTop) 0 var(--marginScaleBottom) var(--marginScaleLeft);
+}
+
+.labeledScale>div {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.labeledScale {
+    display: flex;
+    margin-top: -0.8rem;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.cell {
+    display: flex;
+}
+
+.subcells>div {
+    height: var(--subCellHeight);
+    background-color: transparent;
+    width: var(--subCellWidth);
+}
+
+.subcells>div:last-child {
+    border-top: 1px solid;
+}
+
+.value {
+    width: 2em;
+    align-content: center;
+    font-weight: bold;
+}
+
+.labels {
+    z-index: 1;
+}
+
+.scaleContainer {
+    display: inline-block;
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+
+}
+
+.method {
+    font-size: 1.3em;
+    text-align: center;
+    margin-left: 2em;
+}
+
+div#contentDiv {
+    text-align: center;
+}
+h1 {text-align: center;}
+a {color:blue;text-decoration: none;}
